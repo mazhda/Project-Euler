@@ -1,4 +1,4 @@
-// Problem 1
+// Problem 1 - tested
 
 var total = 0;
 var i = 0;
@@ -7,10 +7,10 @@ for (var i = 0; i < 1000; i++) {
        total += i; 
    };
 }
-console.log(total)
+console.log(total);
 
 
-// Problem 2
+// Problem 2 - tested
 var first = 0;
 var second = 1;
 var total = 0;
@@ -23,3 +23,16 @@ for (var i = first + second; i < 4000000; i = first + second) {
         second = i;
 }
 console.log(total)
+
+//Problem 3 -tested
+var i = 2;
+var og = 600851475143;
+var target = og;
+
+while (i < target) {
+    if(target % i === 0) { 
+        target = target / i;
+    }
+    i++;
+}
+console.log(target);
